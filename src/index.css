@@ -158,7 +158,7 @@ input {
 @media (max-width: 480px) {
   .title {
     font-size: 23px;
-    text-align: center;         /* Sirf yahan center karo */
+    text-align: left;         /* Sirf yahan center karo */
     margin-bottom: 20px;
   }
 
