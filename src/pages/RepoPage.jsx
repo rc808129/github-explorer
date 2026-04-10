@@ -51,7 +51,7 @@ const  RepoPage = ()=>{
   return (
    <div className={`repo-page ${theme}`}>
       <div className="header">
-      <button className="back-btn" onClick={back}>back</button>
+      <button className="back-btn, btn-fixed-white " onClick={back}>back</button>
       <h1 className="page-title">{username} Repositories </h1>
      </div>
       {state.loading && (

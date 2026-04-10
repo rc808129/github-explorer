@@ -1,6 +1,6 @@
 const RepoCard = ({ repo }) => {
   return (
-    <div className="repo-card">
+    <div className="repo-card card">
       <div className="repo-header">
         <a 
           href={repo.html_url} 
@@ -12,7 +12,7 @@ const RepoCard = ({ repo }) => {
         </a>
         
         {repo.language && (
-          <span className="language-badge">{repo.language}</span>
+          <span className="language-badge, btn-fixed-white">{repo.language}</span>
         )}
       </div>
 

@@ -512,7 +512,7 @@ input {
 }
 
 .sort-btn {
- background: white;
+ background: rgb(247, 241, 241);
   color: #374151;
   border: 2px solid #e5e7eb;
   padding: 12px 20px;
@@ -733,3 +733,126 @@ input {
   background: #111827;
   color: #f9fafb;
 }
+
+
+/* Light Theme */
+.light {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #f8f8f8;
+  --border-color: #ddd;
+
+  /* Button ke liye alag variables */
+  --button-bg: #1f2937;
+  --button-text: #ffffff;
+}
+
+.dark {
+  --bg-color: #111111;
+  --text-color: #ffffff;
+  --card-bg: #1f1f1f;
+  --border-color: #444;
+
+  /* Button dark mode mein thoda light dark rahega */
+  --button-bg: #374151;
+  --button-text: #ffffff;
+}
+
+/* Background + normal text */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container,
+.app-container * {
+  color: var(--text-color) !important;
+}
+
+/* Background container */
+.app-container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+/* Card (optional) */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* ==================== THEME SWITCHER BUTTON ==================== */
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 12px 20px;
+  background-color: var(--button-bg);     /* button ka background theme ke saath change */
+  color: var(--button-text) !important;   /* ← YEHI LINE IMPORTANT HAI → hamesha WHITE */
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-switcher:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+
+.btn-fixed-white {
+  color: #ffffff !important;           /* ← HAMESHA WHITE rahega */
+           /* dark shade (dono modes mein achha dikhega) */
+           background-color: #1f2937;  
+  border: 2px solid #444;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-fixed-white:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.buttons {
+
+   --text-color: #181616;
+  
+}
+
