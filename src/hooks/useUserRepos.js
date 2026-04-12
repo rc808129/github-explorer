@@ -13,7 +13,7 @@ function reducer(state, action) {
     case "LOADING":
       return { ...state, loading: true, error: null };
 
-    // ✅ only once (API data)
+    
     case "SET_INITIAL_REPOS":
       return {
         ...state,
@@ -22,7 +22,7 @@ function reducer(state, action) {
         originalRepos: action.payload,
       };
 
-    // ✅ for sort/filter
+    
     case "SET_REPOS":
       return {
         ...state,
@@ -50,7 +50,7 @@ function useUserRepos(username) {
       try {
         const data = await getUserRepos(username);
 
-        // ✅ IMPORTANT change
+        
         dispatch({
           type: "SET_INITIAL_REPOS",
           payload: data,

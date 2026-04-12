@@ -37,16 +37,17 @@ const  RepoPage = ()=>{
   if (!lang) {
     dispatch({
       type: "SET_REPOS",
-      payload: state.originalRepos, // ✅ reset
+      payload: state.originalRepos, 
     });
     return;
   }
 
   dispatch({
     type: "SET_REPOS",
-    payload: filterByLanguage(state.originalRepos, lang), // ✅ fix
+    payload: filterByLanguage(state.originalRepos, lang), 
   });
 }
+
 
   return (
    <div className={`repo-page ${theme}`}>
