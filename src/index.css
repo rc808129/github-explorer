@@ -625,10 +625,12 @@ input {
   margin-bottom: 16px;
   flex: 1;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  /* -webkit-line-clamp: 3; */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+
 
 /* Stats */
 .repo-stats {
@@ -765,7 +767,7 @@ body {
 .app-container {
   min-height: 100vh;
   background-color: var(--bg-color);
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 
