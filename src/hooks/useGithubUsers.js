@@ -2,7 +2,6 @@ import { useReducer, useEffect } from "react";
 import { searchUsers } from "../services/githubApi";
 
 const initialState = {
-  query: "",
   users: [],
   loading: false,
   error: null,
@@ -10,8 +9,6 @@ const initialState = {
 
 function reducer(state, action) {
   switch (action.type) {
-    case "SET_QUERY":
-      return { ...state, query: action.payload };
 
     case "LOADING":
       return { ...state, loading: true, error: null };
@@ -50,7 +47,7 @@ function useGithubUsers(debouncedQuery) {
     fetchUsers();
   }, [debouncedQuery]);
 
-  return { state, dispatch };
+  return { state};
 }
 
 export default useGithubUsers;

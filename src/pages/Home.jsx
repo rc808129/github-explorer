@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import useDebounce from "../hooks/useDebounce";
 
+
 import UserCard from "../components/UserCard";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import useGithubUsers from "../hooks/useGithubUsers";
@@ -41,6 +42,7 @@ const Home = () => {
 
   return (
     <div className={`page ${theme}`}>
+      
       <h2 className="title">GitHub Explorer</h2>
 
       <div className="center-box">
@@ -78,7 +80,7 @@ const Home = () => {
       )}
       <div className="users-grid">
         {state.users.map((user) => (
-          <UserCard key={user.id} user={user} onClick={handleUserClick} />
+          <UserCard key={user.id} user={user} handleUserClick={handleUserClick} />
         ))}
       </div>
     </div>

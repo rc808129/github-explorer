@@ -5,11 +5,11 @@ const Theme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    //  <div className="navbar">
+    
     <button onClick={toggleTheme} className="theme-switcher">
       {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
     </button>
-    // </div>
+    
   );
 };
 
