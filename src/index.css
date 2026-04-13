@@ -833,3 +833,7 @@ body {
   
 }
 
+.page input {
+  color: black !important;
+}
+

@@ -51,7 +51,9 @@ const  RepoPage = ()=>{
 
 
   return (
-   <div className={`repo-page ${theme}`}>
+  //  <div className={`repo-page ${theme}`}>
+
+     <div className={`page ${theme}`}> 
     
       <div className="header">
       <button className="back-btn, btn-fixed-white " onClick={back}>back</button>
